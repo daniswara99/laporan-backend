@@ -134,3 +134,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Environment & credential files
+.env
+.env.*.local
+firebase-service-account.json
