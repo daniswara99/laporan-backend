@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000; // 🔧 Gunakan port dari env (wajib di Railway)
 
 // Inisialisasi Firebase Admin pakai ENV variable
-const serviceAccount = JSON.parse(process.env.FIREBASE_CONFIG);
+const serviceAccount = JSON.parse(process.env.FIREBASE_CONFIG.replace(/\\n/g, '\n'));
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
