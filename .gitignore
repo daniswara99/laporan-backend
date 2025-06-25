@@ -1,0 +1,17 @@
+# node_modules
+node_modules/
+
+# dotenv files
+.env
+.env.local
+.env.*.local
+
+# Firebase credential
+firebase-service-account.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Others
+.DS_Store
